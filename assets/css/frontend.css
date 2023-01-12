@@ -1,0 +1,7 @@
+.choose-language {
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
