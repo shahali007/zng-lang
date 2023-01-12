@@ -14,10 +14,23 @@
     </head>
 
     <body>
+        <div class="container bg-transparent">
+            <div class="choose-language-top">
+                <p lng-tag="json_choose_language"></p>
+                <div class="d-inline-block">
+                    <input type="radio" class="btn-check" name="options" id="enTranslator" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="enTranslator">English</label>
+                </div>
+                <div class="d-inline-block">
+                    <input type="radio" class="btn-check" name="options" id="spTranslator" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="spTranslator">Spanish</label>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div id="topHeader">
                 <div id="topLogo">
-                    <a href="/">
+                    <a href="index.html">
                         <span class="icoLogo">
                             <img src="assets/images/icoLogo.png" alt="Logo" />
                         </span>
@@ -30,7 +43,7 @@
                     <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
                 </div>
                 <ul id="mainNav">
-                    <li><a href="/" lng-tag="nav_home"></a></li>
+                    <li><a href="index.html" lng-tag="nav_home"></a></li>
                     <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
                     <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
                     <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
@@ -64,26 +77,12 @@
                 </div>
                 <div id="footerRightCol">
                     <ul id="footerNav">
-                        <li><a href="/" lng-tag="footer_nav_home"></a></li>
+                        <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
                         <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
                         <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
                         <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
                         <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
                     </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="choose-language">
-                <p lng-tag="json_choose_language"></p>
-                <div class="d-inline-block">
-                    <input type="radio" class="btn-check" name="options" id="enTranslator" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="enTranslator">English</label>
-                </div>
-                <div class="d-inline-block">
-                    <input type="radio" class="btn-check" name="options" id="spTranslator" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="spTranslator">Spanish</label>
                 </div>
             </div>
         </div>
