@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ZNG</title>
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="assets/css/frontend.base.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
-        <!-- JavaScript: Check selected/default language on page load -->
-        <script src="assets/js/init.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZNG</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
+    <!-- JavaScript: Check selected/default language on page load -->
+    <script src="assets/js/init.js"></script>
+</head>
 
-    <body>
-        <div class="container bg-transparent">
-            <div class="choose-language-top">
-                <p lng-tag="json_choose_language"></p>
-                <select name="languageChange" id="languageChange">
-                    <option value="en">EN</option>
-                    <option value="sp">SP</option>
-                </select>
+<body>
+    <div class="container bg-transparent">
+        <div class="choose-language-top">
+            <p lng-tag="json_choose_language"></p>
+            <select name="languageChange" id="languageChange">
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div id="topHeader">
+            <div id="topLogo">
+                <a href="index.html">
+                    <span class="icoLogo">
+                        <img src="assets/images/icoLogo.png" alt="Logo" />
+                    </span>
+                    <span class="logoTitle">ZNG</span>
+                    <span class="logoSubtitle">Best value for advertisers and publishers</span>
+                </a>
+            </div>
+            <div id="topSubNav">
+                <a href="advertiser-login.html" class="advLogin" lng-tag="nav_advertiser_login"></a>
+                <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
+            </div>
+            <ul id="mainNav">
+                <li><a href="index.html" lng-tag="nav_home"></a></li>
+                <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
+                <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
+                <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
+            </ul>
+        </div>
+        <div id="innerContent">
+            <h1 lng-tag="advertiser_login"></h1>
+            <div id="stdForm">
+                <div class="messages"></div>
+                <form action="" method="post">
+                    <div>
+                        <label lng-tag="login"></label>
+                        <input type="text" name="login" maxlength="40" />
+                    </div>
+                    <div>
+                        <label lng-tag="password"></label>
+                        <input type="password" name="password" maxlength="40" />
+                    </div>
+                    <div>
+                        <a href="#" style="padding-left: 205px" lng-tag="forgot_password"></a>
+                    </div>
+                    <div><button type="submit" lng-tag="login"></button></div>
+                </form>
             </div>
         </div>
-        <div class="container">
-            <div id="topHeader">
-                <div id="topLogo">
-                    <a href="index.html">
-                        <span class="icoLogo">
-                            <img src="assets/images/icoLogo.png" alt="Logo" />
-                        </span>
-                        <span class="logoTitle">ZNG</span>
-                        <span class="logoSubtitle">Best value for advertisers and publishers</span>
-                    </a>
-                </div>
-                <div id="topSubNav">
-                    <a href="advertiser-login.html" class="advLogin" lng-tag="nav_advertiser_login"></a>
-                    <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
-                </div>
-                <ul id="mainNav">
-                    <li><a href="index.html" lng-tag="nav_home"></a></li>
-                    <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
-                    <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
-                    <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
+    </div>
+    <div id="bottomFooter">
+        <div class="container noBg">
+            <div id="footerLeftCol">
+                <a href="#" class="adkernelPoweredLink" target="_blank" lng-tag="footer_powered_by"></a>
+            </div>
+            <div id="footerRightCol">
+                <ul id="footerNav">
+                    <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
+                    <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
+                    <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
+                    <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
+                    <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
                 </ul>
             </div>
-            <div id="innerContent">
-                <h1 lng-tag="advertiser_login"></h1>
-                <div id="stdForm">
-                    <div class="messages"></div>
-                    <form action="" method="post">
-                        <div>
-                            <label lng-tag="login"></label>
-                            <input type="text" name="login" maxlength="40" />
-                        </div>
-                        <div>
-                            <label lng-tag="password"></label>
-                            <input type="password" name="password" maxlength="40" />
-                        </div>
-                        <div>
-                            <a href="#" style="padding-left: 205px" lng-tag="forgot_password"></a>
-                        </div>
-                        <div><button type="submit" lng-tag="login"></button></div>
-                    </form>
-                </div>
-            </div>
         </div>
-        <div id="bottomFooter">
-            <div class="container noBg">
-                <div id="footerLeftCol">
-                    <a href="#" class="adkernelPoweredLink" target="_blank" lng-tag="footer_powered_by"></a>
-                </div>
-                <div id="footerRightCol">
-                    <ul id="footerNav">
-                        <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
-                        <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
-                        <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
-                        <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
-                        <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <!-- Option: Other JavaScript -->
-        <script src="assets/js/translate.js"></script>
-        <script src="assets/js/index.js"></script>
-    </body>
+    <!-- Option: Other JavaScript -->
+    <script src="assets/js/translate.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
 
 </html>

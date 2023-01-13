@@ -1,359 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ZNG</title>
-        <link rel="shortcut icon" href="assets/images/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="assets/css/frontend.base.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/frontend.css" />
-        <!-- JavaScript: Check selected/default language on page load -->
-        <script src="assets/js/init.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZNG</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.base.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.css" />
+    <!-- JavaScript: Check selected/default language on page load -->
+    <script src="assets/js/init.js"></script>
+</head>
 
-    <body>
-        <div class="container bg-transparent">
-            <div class="choose-language-top">
-                <p lng-tag="json_choose_language"></p>
-                <select name="languageChange" id="languageChange">
-                    <option value="en">EN</option>
-                    <option value="sp">SP</option>
-                </select>
-            </div>
+<body>
+    <div class="container bg-transparent">
+        <div class="choose-language-top">
+            <p lng-tag="json_choose_language"></p>
+            <select name="languageChange" id="languageChange">
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+            </select>
         </div>
-        <div class="container">
-            <div id="topHeader">
-                <div id="topLogo">
-                    <a href="index.html">
-                        <span class="icoLogo">
-                            <img src="assets/images/icoLogo.png" alt="Logo" />
-                        </span>
-                        <span class="logoTitle">ZNG</span>
-                        <span class="logoSubtitle">Best value for advertisers and publishers</span>
-                    </a>
-                </div>
-                <div id="topSubNav">
-                    <a href="advertiser-login.html" class="advLogin" lng-tag="nav_advertiser_login"></a>
-                    <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
-                </div>
-                <ul id="mainNav">
-                    <li><a href="index.html" lng-tag="nav_home"></a></li>
-                    <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
-                    <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
-                    <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
-                </ul>
+    </div>
+    <div class="container">
+        <div id="topHeader">
+            <div id="topLogo">
+                <a href="index.html">
+                    <span class="icoLogo">
+                        <img src="assets/images/icoLogo.png" alt="Logo" />
+                    </span>
+                    <span class="logoTitle">ZNG</span>
+                    <span class="logoSubtitle">Best value for advertisers and publishers</span>
+                </a>
             </div>
-            <div id="innerContent">
-                <h1 lng-tag="advertiser_signup"></h1>
-                <div id="stdForm">
-                    <div class="messages"></div>
-                    <form action="" method="post">
-                        <div>
-                            <label title="Account Login (Minimum length is 3 characters)" lng-tag="login"></label>
-                            <input type="text" name="login" maxlength="40" />
-                            <span class="necessarilyField">*</span>
-                        </div>
-                        <div>
-                            <label title="New Account Password (Minimum length is 5 characters)"
-                                lng-tag="password"></label>
-                            <input type="password" name="password" maxlength="40" />
-                            <span class="necessarilyField">*</span>
-                        </div>
-                        <div>
-                            <label title="Confirm New Account Password (Minimum length is 5 characters)"
-                                lng-tag="confirm_password">
+            <div id="topSubNav">
+                <a href="advertiser-login.html" class="advLogin" lng-tag="nav_advertiser_login"></a>
+                <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
+            </div>
+            <ul id="mainNav">
+                <li><a href="index.html" lng-tag="nav_home"></a></li>
+                <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
+                <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
+                <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
+            </ul>
+        </div>
+        <div id="innerContent">
+            <h1 lng-tag="advertiser_signup"></h1>
+            <div id="stdForm">
+                <div class="messages"></div>
+                <form action="" method="post">
+                    <div>
+                        <label title="Account Login (Minimum length is 3 characters)" lng-tag="login"></label>
+                        <input type="text" name="login" maxlength="40" />
+                        <span class="necessarilyField">*</span>
+                    </div>
+                    <div>
+                        <label title="New Account Password (Minimum length is 5 characters)" lng-tag="password"></label>
+                        <input type="password" name="password" maxlength="40" />
+                        <span class="necessarilyField">*</span>
+                    </div>
+                    <div>
+                        <label title="Confirm New Account Password (Minimum length is 5 characters)"
+                            lng-tag="confirm_password">
 
-                            </label>
-                            <input type="password" name="passwordConfirm" maxlength="40" /><span
-                                class="necessarilyField">*</span>
-                        </div>
-                        <div>
-                            <label lng-tag="email"></label>
-                            <input type="text" name="email" maxlength="100" />
-                            <span class="necessarilyField">*</span>
-                        </div>
-                        <div>
-                            <label lng-tag="first_last_name"></label>
-                            <input type="text" name="firstAndLastName" maxlength="100" />
-                            <span class="necessarilyField">*</span>
-                        </div>
-                        <div>
-                            <label lng-tag="country"></label>
-                            <select name="addressCountry">
-                                <option value="af">Afghanistan</option>
-                                <option value="ax">Aland Islands</option>
-                                <option value="al">Albania</option>
-                                <option value="dz">Algeria</option>
-                                <option value="as">American Samoa</option>
-                                <option value="ad">Andorra</option>
-                                <option value="ao">Angola</option>
-                                <option value="ai">Anguilla</option>
-                                <option value="ag">Antigua and Barbuda</option>
-                                <option value="ar">Argentina</option>
-                                <option value="am">Armenia</option>
-                                <option value="aw">Aruba</option>
-                                <option value="au">Australia</option>
-                                <option value="at">Austria</option>
-                                <option value="az">Azerbaijan</option>
-                                <option value="bs">Bahamas</option>
-                                <option value="bh">Bahrain</option>
-                                <option value="bd" selected="">Bangladesh</option>
-                                <option value="bb">Barbados</option>
-                                <option value="by">Belarus</option>
-                                <option value="be">Belgium</option>
-                                <option value="bz">Belize</option>
-                                <option value="bj">Benin</option>
-                                <option value="bm">Bermuda</option>
-                                <option value="bt">Bhutan</option>
-                                <option value="bo">Bolivia</option>
-                                <option value="ba">Bosnia and Herzegovina</option>
-                                <option value="bw">Botswana</option>
-                                <option value="bv">Bouvet Island</option>
-                                <option value="br">Brazil</option>
-                                <option value="io">British Indian Ocean Territory</option>
-                                <option value="bn">Brunei Darussalam</option>
-                                <option value="bg">Bulgaria</option>
-                                <option value="bf">Burkina Faso</option>
-                                <option value="bi">Burundi</option>
-                                <option value="kh">Cambodia</option>
-                                <option value="cm">Cameroon</option>
-                                <option value="ca">Canada</option>
-                                <option value="cv">Cape Verde</option>
-                                <option value="ky">Cayman Islands</option>
-                                <option value="cf">Central African Republic</option>
-                                <option value="td">Chad</option>
-                                <option value="cl">Chile</option>
-                                <option value="cn">China</option>
-                                <option value="cx">Christmas Island</option>
-                                <option value="cc">Cocos (Keeling) Islands</option>
-                                <option value="co">Colombia</option>
-                                <option value="km">Comoros</option>
-                                <option value="ck">Cook Islands</option>
-                                <option value="cr">Costa Rica</option>
-                                <option value="ci">Cote D'Ivoire</option>
-                                <option value="hr">Croatia</option>
-                                <option value="cw">Curacao</option>
-                                <option value="cy">Cyprus</option>
-                                <option value="cz">Czech Republic</option>
-                                <option value="dk">Denmark</option>
-                                <option value="dj">Djibouti</option>
-                                <option value="dm">Dominica</option>
-                                <option value="do">Dominican Republic</option>
-                                <option value="tp">East Timor</option>
-                                <option value="ec">Ecuador</option>
-                                <option value="eg">Egypt</option>
-                                <option value="sv">El Salvador</option>
-                                <option value="gq">Equatorial Guinea</option>
-                                <option value="er">Eritrea</option>
-                                <option value="ee">Estonia</option>
-                                <option value="et">Ethiopia</option>
-                                <option value="fk">Falkland Islands (Malvinas)</option>
-                                <option value="fo">Faroe Islands</option>
-                                <option value="fj">Fiji</option>
-                                <option value="fi">Finland</option>
-                                <option value="fr">France</option>
-                                <option value="fx">France, Metropolitan</option>
-                                <option value="gf">French Guiana</option>
-                                <option value="pf">French Polynesia</option>
-                                <option value="tf">French Southern Territories</option>
-                                <option value="ga">Gabon</option>
-                                <option value="gm">Gambia</option>
-                                <option value="ge">Georgia</option>
-                                <option value="de">Germany</option>
-                                <option value="gh">Ghana</option>
-                                <option value="gi">Gibraltar</option>
-                                <option value="gr">Greece</option>
-                                <option value="gl">Greenland</option>
-                                <option value="gd">Grenada</option>
-                                <option value="gp">Guadeloupe</option>
-                                <option value="gu">Guam</option>
-                                <option value="gt">Guatemala</option>
-                                <option value="gg">Guernsey</option>
-                                <option value="gn">Guinea</option>
-                                <option value="gw">Guinea-Bissau</option>
-                                <option value="gy">Guyana</option>
-                                <option value="ht">Haiti</option>
-                                <option value="hm">Heard Island and McDonald Islands</option>
-                                <option value="va">Holy See (Vatican City State)</option>
-                                <option value="hn">Honduras</option>
-                                <option value="hk">Hong Kong</option>
-                                <option value="hu">Hungary</option>
-                                <option value="is">Iceland</option>
-                                <option value="in">India</option>
-                                <option value="id">Indonesia</option>
-                                <option value="iq">Iraq</option>
-                                <option value="ie">Ireland</option>
-                                <option value="im">Isle of Man</option>
-                                <option value="il">Israel</option>
-                                <option value="it">Italy</option>
-                                <option value="jm">Jamaica</option>
-                                <option value="jp">Japan</option>
-                                <option value="je">Jersey</option>
-                                <option value="jo">Jordan</option>
-                                <option value="kz">Kazakstan</option>
-                                <option value="ke">Kenya</option>
-                                <option value="ki">Kiribati</option>
-                                <option value="kr">Korea, Republic of</option>
-                                <option value="xk">Kosovo</option>
-                                <option value="kw">Kuwait</option>
-                                <option value="kg">Kyrgyzstan</option>
-                                <option value="la">Lao People's Democratic Republic</option>
-                                <option value="lv">Latvia</option>
-                                <option value="lb">Lebanon</option>
-                                <option value="ls">Lesotho</option>
-                                <option value="ly">Libya</option>
-                                <option value="li">Liechtenstein</option>
-                                <option value="lt">Lithuania</option>
-                                <option value="lu">Luxembourg</option>
-                                <option value="mo">Macau</option>
-                                <option value="mk">Macedonia</option>
-                                <option value="mg">Madagascar</option>
-                                <option value="mw">Malawi</option>
-                                <option value="my">Malaysia</option>
-                                <option value="mv">Maldives</option>
-                                <option value="ml">Mali</option>
-                                <option value="mt">Malta</option>
-                                <option value="mh">Marshall Islands</option>
-                                <option value="mq">Martinique</option>
-                                <option value="mr">Mauritania</option>
-                                <option value="mu">Mauritius</option>
-                                <option value="yt">Mayotte</option>
-                                <option value="mx">Mexico</option>
-                                <option value="fm">Micronesia, Federated States of</option>
-                                <option value="md">Moldova, Republic of</option>
-                                <option value="mc">Monaco</option>
-                                <option value="mn">Mongolia</option>
-                                <option value="me">Montenegro</option>
-                                <option value="ms">Montserrat</option>
-                                <option value="ma">Morocco</option>
-                                <option value="mz">Mozambique</option>
-                                <option value="mm">Myanmar (Burma)</option>
-                                <option value="na">Namibia</option>
-                                <option value="nr">Nauru</option>
-                                <option value="np">Nepal</option>
-                                <option value="nl">Netherlands</option>
-                                <option value="an">Netherlands Antilles</option>
-                                <option value="nc">New Caledonia</option>
-                                <option value="nz">New Zealand</option>
-                                <option value="ni">Nicaragua</option>
-                                <option value="ne">Niger</option>
-                                <option value="ng">Nigeria</option>
-                                <option value="nu">Niue</option>
-                                <option value="nf">Norfolk Island</option>
-                                <option value="mp">Northern Mariana Islands</option>
-                                <option value="no">Norway</option>
-                                <option value="om">Oman</option>
-                                <option value="ap">Other Asia/Pacific</option>
-                                <option value="eu">Other Europe</option>
-                                <option value="pk">Pakistan</option>
-                                <option value="pw">Palau</option>
-                                <option value="ps">Palestinian Territory</option>
-                                <option value="pa">Panama</option>
-                                <option value="pg">Papua New Guinea</option>
-                                <option value="py">Paraguay</option>
-                                <option value="pe">Peru</option>
-                                <option value="ph">Philippines</option>
-                                <option value="pn">Pitcairn Islands</option>
-                                <option value="pl">Poland</option>
-                                <option value="pt">Portugal</option>
-                                <option value="pr">Puerto Rico</option>
-                                <option value="qa">Qatar</option>
-                                <option value="re">Reunion</option>
-                                <option value="ro">Romania</option>
-                                <option value="ru">Russian Federation</option>
-                                <option value="rw">Rwanda</option>
-                                <option value="sh">Saint Helena</option>
-                                <option value="kn">Saint Kitts and Nevis</option>
-                                <option value="lc">Saint Lucia</option>
-                                <option value="pm">Saint Pierre and Miquelon</option>
-                                <option value="vc">Saint Vincent and the Grenadines</option>
-                                <option value="ws">Samoa</option>
-                                <option value="sm">San Marino</option>
-                                <option value="st">Sao Tome and Principe</option>
-                                <option value="sa">Saudi Arabia</option>
-                                <option value="sn">Senegal</option>
-                                <option value="rs">Serbia</option>
-                                <option value="sc">Seychelles</option>
-                                <option value="sl">Sierra Leone</option>
-                                <option value="sg">Singapore</option>
-                                <option value="sk">Slovakia</option>
-                                <option value="si">Slovenia</option>
-                                <option value="sb">Solomon Islands</option>
-                                <option value="so">Somalia</option>
-                                <option value="za">South Africa</option>
-                                <option value="gs">South Georgia and the South Sandwich Islands</option>
-                                <option value="es">Spain</option>
-                                <option value="lk">Sri Lanka</option>
-                                <option value="sr">Suriname</option>
-                                <option value="sj">Svalbard and Jan Mayen</option>
-                                <option value="sz">Swaziland</option>
-                                <option value="se">Sweden</option>
-                                <option value="ch">Switzerland</option>
-                                <option value="tw">Taiwan</option>
-                                <option value="tj">Tajikistan</option>
-                                <option value="tz">Tanzania, United Republic of</option>
-                                <option value="th">Thailand</option>
-                                <option value="tl">Timor-Leste</option>
-                                <option value="tg">Togo</option>
-                                <option value="tk">Tokelau</option>
-                                <option value="to">Tonga</option>
-                                <option value="tt">Trinidad and Tobago</option>
-                                <option value="tn">Tunisia</option>
-                                <option value="tr">Turkey</option>
-                                <option value="tm">Turkmenistan</option>
-                                <option value="tc">Turks and Caicos Islands</option>
-                                <option value="tv">Tuvalu</option>
-                                <option value="ug">Uganda</option>
-                                <option value="ua">Ukraine</option>
-                                <option value="ae">United Arab Emirates</option>
-                                <option value="gb">United Kingdom</option>
-                                <option value="us">United States</option>
-                                <option value="uy">Uruguay</option>
-                                <option value="uz">Uzbekistan</option>
-                                <option value="vu">Vanuatu</option>
-                                <option value="ve">Venezuela</option>
-                                <option value="vn">Vietnam</option>
-                                <option value="vg">Virgin Islands, British</option>
-                                <option value="vi">Virgin Islands, U.S.</option>
-                                <option value="wf">Wallis and Futuna</option>
-                                <option value="eh">Western Sahara</option>
-                                <option value="ye">Yemen</option>
-                                <option value="zm">Zambia</option>
-                                <option value="zw">Zimbabwe</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label lng-tag="phone"></label>
-                            <input type="text" name="phone" maxlength="20" />
-                            <span class="necessarilyField">*</span>
-                        </div>
-                        <div>
-                            <label lng-tag="company"></label>
-                            <input type="text" name="company" maxlength="100" />
-                        </div>
-                        <div>
-                            <input type="checkbox" name="privacyPolicy" value="1" />
-                            <span>
-                                <span lng-tag="check_signup_agree"></span>
-                                <a href="#" target="blank" lng-tag="privacy_policy"></a>.
-                            </span>
-                            <input type="hidden" name="privacyPolicy" />
-                        </div>
-                        <div class="capcha">
-                            <script src="//www.google.com/recaptcha/api.js?hl=en" async="" defer=""></script>
-                            <div class="g-recaptcha" data-sitekey="6LeDIB0TAAAAAF3Q3f23DCpyDWTtJiGE5ZSuM1z2">
-                                <div style="width: 304px; height: 78px">
-                                    <div>
-                                        <iframe title="reCAPTCHA"
-                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeDIB0TAAAAAF3Q3f23DCpyDWTtJiGE5ZSuM1z2&amp;co=aHR0cHM6Ly9sb2dpbi56bmcuY29tOjQ0Mw..&amp;hl=en&amp;v=u35fw2Dx4G0WsO6SztVYg4cV&amp;size=normal&amp;cb=xkk0q2d14b14"
-                                            width="304" height="78" role="presentation" name="a-l7mmkyg95y1r"
-                                            frameborder="0" scrolling="no"
-                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                    </div>
-                                    <textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                                        class="g-recaptcha-response" style="
+                        </label>
+                        <input type="password" name="passwordConfirm" maxlength="40" /><span
+                            class="necessarilyField">*</span>
+                    </div>
+                    <div>
+                        <label lng-tag="email"></label>
+                        <input type="text" name="email" maxlength="100" />
+                        <span class="necessarilyField">*</span>
+                    </div>
+                    <div>
+                        <label lng-tag="first_last_name"></label>
+                        <input type="text" name="firstAndLastName" maxlength="100" />
+                        <span class="necessarilyField">*</span>
+                    </div>
+                    <div>
+                        <label lng-tag="country"></label>
+                        <select name="addressCountry">
+                            <option value="af">Afghanistan</option>
+                            <option value="ax">Aland Islands</option>
+                            <option value="al">Albania</option>
+                            <option value="dz">Algeria</option>
+                            <option value="as">American Samoa</option>
+                            <option value="ad">Andorra</option>
+                            <option value="ao">Angola</option>
+                            <option value="ai">Anguilla</option>
+                            <option value="ag">Antigua and Barbuda</option>
+                            <option value="ar">Argentina</option>
+                            <option value="am">Armenia</option>
+                            <option value="aw">Aruba</option>
+                            <option value="au">Australia</option>
+                            <option value="at">Austria</option>
+                            <option value="az">Azerbaijan</option>
+                            <option value="bs">Bahamas</option>
+                            <option value="bh">Bahrain</option>
+                            <option value="bd" selected="">Bangladesh</option>
+                            <option value="bb">Barbados</option>
+                            <option value="by">Belarus</option>
+                            <option value="be">Belgium</option>
+                            <option value="bz">Belize</option>
+                            <option value="bj">Benin</option>
+                            <option value="bm">Bermuda</option>
+                            <option value="bt">Bhutan</option>
+                            <option value="bo">Bolivia</option>
+                            <option value="ba">Bosnia and Herzegovina</option>
+                            <option value="bw">Botswana</option>
+                            <option value="bv">Bouvet Island</option>
+                            <option value="br">Brazil</option>
+                            <option value="io">British Indian Ocean Territory</option>
+                            <option value="bn">Brunei Darussalam</option>
+                            <option value="bg">Bulgaria</option>
+                            <option value="bf">Burkina Faso</option>
+                            <option value="bi">Burundi</option>
+                            <option value="kh">Cambodia</option>
+                            <option value="cm">Cameroon</option>
+                            <option value="ca">Canada</option>
+                            <option value="cv">Cape Verde</option>
+                            <option value="ky">Cayman Islands</option>
+                            <option value="cf">Central African Republic</option>
+                            <option value="td">Chad</option>
+                            <option value="cl">Chile</option>
+                            <option value="cn">China</option>
+                            <option value="cx">Christmas Island</option>
+                            <option value="cc">Cocos (Keeling) Islands</option>
+                            <option value="co">Colombia</option>
+                            <option value="km">Comoros</option>
+                            <option value="ck">Cook Islands</option>
+                            <option value="cr">Costa Rica</option>
+                            <option value="ci">Cote D'Ivoire</option>
+                            <option value="hr">Croatia</option>
+                            <option value="cw">Curacao</option>
+                            <option value="cy">Cyprus</option>
+                            <option value="cz">Czech Republic</option>
+                            <option value="dk">Denmark</option>
+                            <option value="dj">Djibouti</option>
+                            <option value="dm">Dominica</option>
+                            <option value="do">Dominican Republic</option>
+                            <option value="tp">East Timor</option>
+                            <option value="ec">Ecuador</option>
+                            <option value="eg">Egypt</option>
+                            <option value="sv">El Salvador</option>
+                            <option value="gq">Equatorial Guinea</option>
+                            <option value="er">Eritrea</option>
+                            <option value="ee">Estonia</option>
+                            <option value="et">Ethiopia</option>
+                            <option value="fk">Falkland Islands (Malvinas)</option>
+                            <option value="fo">Faroe Islands</option>
+                            <option value="fj">Fiji</option>
+                            <option value="fi">Finland</option>
+                            <option value="fr">France</option>
+                            <option value="fx">France, Metropolitan</option>
+                            <option value="gf">French Guiana</option>
+                            <option value="pf">French Polynesia</option>
+                            <option value="tf">French Southern Territories</option>
+                            <option value="ga">Gabon</option>
+                            <option value="gm">Gambia</option>
+                            <option value="ge">Georgia</option>
+                            <option value="de">Germany</option>
+                            <option value="gh">Ghana</option>
+                            <option value="gi">Gibraltar</option>
+                            <option value="gr">Greece</option>
+                            <option value="gl">Greenland</option>
+                            <option value="gd">Grenada</option>
+                            <option value="gp">Guadeloupe</option>
+                            <option value="gu">Guam</option>
+                            <option value="gt">Guatemala</option>
+                            <option value="gg">Guernsey</option>
+                            <option value="gn">Guinea</option>
+                            <option value="gw">Guinea-Bissau</option>
+                            <option value="gy">Guyana</option>
+                            <option value="ht">Haiti</option>
+                            <option value="hm">Heard Island and McDonald Islands</option>
+                            <option value="va">Holy See (Vatican City State)</option>
+                            <option value="hn">Honduras</option>
+                            <option value="hk">Hong Kong</option>
+                            <option value="hu">Hungary</option>
+                            <option value="is">Iceland</option>
+                            <option value="in">India</option>
+                            <option value="id">Indonesia</option>
+                            <option value="iq">Iraq</option>
+                            <option value="ie">Ireland</option>
+                            <option value="im">Isle of Man</option>
+                            <option value="il">Israel</option>
+                            <option value="it">Italy</option>
+                            <option value="jm">Jamaica</option>
+                            <option value="jp">Japan</option>
+                            <option value="je">Jersey</option>
+                            <option value="jo">Jordan</option>
+                            <option value="kz">Kazakstan</option>
+                            <option value="ke">Kenya</option>
+                            <option value="ki">Kiribati</option>
+                            <option value="kr">Korea, Republic of</option>
+                            <option value="xk">Kosovo</option>
+                            <option value="kw">Kuwait</option>
+                            <option value="kg">Kyrgyzstan</option>
+                            <option value="la">Lao People's Democratic Republic</option>
+                            <option value="lv">Latvia</option>
+                            <option value="lb">Lebanon</option>
+                            <option value="ls">Lesotho</option>
+                            <option value="ly">Libya</option>
+                            <option value="li">Liechtenstein</option>
+                            <option value="lt">Lithuania</option>
+                            <option value="lu">Luxembourg</option>
+                            <option value="mo">Macau</option>
+                            <option value="mk">Macedonia</option>
+                            <option value="mg">Madagascar</option>
+                            <option value="mw">Malawi</option>
+                            <option value="my">Malaysia</option>
+                            <option value="mv">Maldives</option>
+                            <option value="ml">Mali</option>
+                            <option value="mt">Malta</option>
+                            <option value="mh">Marshall Islands</option>
+                            <option value="mq">Martinique</option>
+                            <option value="mr">Mauritania</option>
+                            <option value="mu">Mauritius</option>
+                            <option value="yt">Mayotte</option>
+                            <option value="mx">Mexico</option>
+                            <option value="fm">Micronesia, Federated States of</option>
+                            <option value="md">Moldova, Republic of</option>
+                            <option value="mc">Monaco</option>
+                            <option value="mn">Mongolia</option>
+                            <option value="me">Montenegro</option>
+                            <option value="ms">Montserrat</option>
+                            <option value="ma">Morocco</option>
+                            <option value="mz">Mozambique</option>
+                            <option value="mm">Myanmar (Burma)</option>
+                            <option value="na">Namibia</option>
+                            <option value="nr">Nauru</option>
+                            <option value="np">Nepal</option>
+                            <option value="nl">Netherlands</option>
+                            <option value="an">Netherlands Antilles</option>
+                            <option value="nc">New Caledonia</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="ni">Nicaragua</option>
+                            <option value="ne">Niger</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="nu">Niue</option>
+                            <option value="nf">Norfolk Island</option>
+                            <option value="mp">Northern Mariana Islands</option>
+                            <option value="no">Norway</option>
+                            <option value="om">Oman</option>
+                            <option value="ap">Other Asia/Pacific</option>
+                            <option value="eu">Other Europe</option>
+                            <option value="pk">Pakistan</option>
+                            <option value="pw">Palau</option>
+                            <option value="ps">Palestinian Territory</option>
+                            <option value="pa">Panama</option>
+                            <option value="pg">Papua New Guinea</option>
+                            <option value="py">Paraguay</option>
+                            <option value="pe">Peru</option>
+                            <option value="ph">Philippines</option>
+                            <option value="pn">Pitcairn Islands</option>
+                            <option value="pl">Poland</option>
+                            <option value="pt">Portugal</option>
+                            <option value="pr">Puerto Rico</option>
+                            <option value="qa">Qatar</option>
+                            <option value="re">Reunion</option>
+                            <option value="ro">Romania</option>
+                            <option value="ru">Russian Federation</option>
+                            <option value="rw">Rwanda</option>
+                            <option value="sh">Saint Helena</option>
+                            <option value="kn">Saint Kitts and Nevis</option>
+                            <option value="lc">Saint Lucia</option>
+                            <option value="pm">Saint Pierre and Miquelon</option>
+                            <option value="vc">Saint Vincent and the Grenadines</option>
+                            <option value="ws">Samoa</option>
+                            <option value="sm">San Marino</option>
+                            <option value="st">Sao Tome and Principe</option>
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="sn">Senegal</option>
+                            <option value="rs">Serbia</option>
+                            <option value="sc">Seychelles</option>
+                            <option value="sl">Sierra Leone</option>
+                            <option value="sg">Singapore</option>
+                            <option value="sk">Slovakia</option>
+                            <option value="si">Slovenia</option>
+                            <option value="sb">Solomon Islands</option>
+                            <option value="so">Somalia</option>
+                            <option value="za">South Africa</option>
+                            <option value="gs">South Georgia and the South Sandwich Islands</option>
+                            <option value="es">Spain</option>
+                            <option value="lk">Sri Lanka</option>
+                            <option value="sr">Suriname</option>
+                            <option value="sj">Svalbard and Jan Mayen</option>
+                            <option value="sz">Swaziland</option>
+                            <option value="se">Sweden</option>
+                            <option value="ch">Switzerland</option>
+                            <option value="tw">Taiwan</option>
+                            <option value="tj">Tajikistan</option>
+                            <option value="tz">Tanzania, United Republic of</option>
+                            <option value="th">Thailand</option>
+                            <option value="tl">Timor-Leste</option>
+                            <option value="tg">Togo</option>
+                            <option value="tk">Tokelau</option>
+                            <option value="to">Tonga</option>
+                            <option value="tt">Trinidad and Tobago</option>
+                            <option value="tn">Tunisia</option>
+                            <option value="tr">Turkey</option>
+                            <option value="tm">Turkmenistan</option>
+                            <option value="tc">Turks and Caicos Islands</option>
+                            <option value="tv">Tuvalu</option>
+                            <option value="ug">Uganda</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="ae">United Arab Emirates</option>
+                            <option value="gb">United Kingdom</option>
+                            <option value="us">United States</option>
+                            <option value="uy">Uruguay</option>
+                            <option value="uz">Uzbekistan</option>
+                            <option value="vu">Vanuatu</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="vn">Vietnam</option>
+                            <option value="vg">Virgin Islands, British</option>
+                            <option value="vi">Virgin Islands, U.S.</option>
+                            <option value="wf">Wallis and Futuna</option>
+                            <option value="eh">Western Sahara</option>
+                            <option value="ye">Yemen</option>
+                            <option value="zm">Zambia</option>
+                            <option value="zw">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label lng-tag="phone"></label>
+                        <input type="text" name="phone" maxlength="20" />
+                        <span class="necessarilyField">*</span>
+                    </div>
+                    <div>
+                        <label lng-tag="company"></label>
+                        <input type="text" name="company" maxlength="100" />
+                    </div>
+                    <div>
+                        <input type="checkbox" name="privacyPolicy" value="1" />
+                        <span>
+                            <span lng-tag="check_signup_agree"></span>
+                            <a href="#" target="blank" lng-tag="privacy_policy"></a>.
+                        </span>
+                        <input type="hidden" name="privacyPolicy" />
+                    </div>
+                    <div class="capcha">
+                        <script src="//www.google.com/recaptcha/api.js?hl=en" async="" defer=""></script>
+                        <div class="g-recaptcha" data-sitekey="6LeDIB0TAAAAAF3Q3f23DCpyDWTtJiGE5ZSuM1z2">
+                            <div style="width: 304px; height: 78px">
+                                <div>
+                                    <iframe title="reCAPTCHA"
+                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeDIB0TAAAAAF3Q3f23DCpyDWTtJiGE5ZSuM1z2&amp;co=aHR0cHM6Ly9sb2dpbi56bmcuY29tOjQ0Mw..&amp;hl=en&amp;v=u35fw2Dx4G0WsO6SztVYg4cV&amp;size=normal&amp;cb=xkk0q2d14b14"
+                                        width="304" height="78" role="presentation" name="a-l7mmkyg95y1r"
+                                        frameborder="0" scrolling="no"
+                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                </div>
+                                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                    class="g-recaptcha-response" style="
                                             width: 250px;
                                             height: 40px;
                                             border: 1px solid rgb(193, 193, 193);
@@ -362,35 +361,35 @@
                                             resize: none;
                                             display: none;
                                         "></textarea>
-                                </div>
-                                <iframe style="display: none"></iframe>
                             </div>
+                            <iframe style="display: none"></iframe>
                         </div>
-                        <div><button type="submit" lng-tag="signup"></button></div>
-                    </form>
-                </div>
+                    </div>
+                    <div><button type="submit" lng-tag="signup"></button></div>
+                </form>
             </div>
         </div>
-        <div id="bottomFooter">
-            <div class="container noBg">
-                <div id="footerLeftCol">
-                    <a href="#" class="adkernelPoweredLink" target="_blank" lng-tag="footer_powered_by"></a>
-                </div>
-                <div id="footerRightCol">
-                    <ul id="footerNav">
-                        <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
-                        <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
-                        <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
-                        <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
-                        <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
-                    </ul>
-                </div>
+    </div>
+    <div id="bottomFooter">
+        <div class="container noBg">
+            <div id="footerLeftCol">
+                <a href="#" class="adkernelPoweredLink" target="_blank" lng-tag="footer_powered_by"></a>
+            </div>
+            <div id="footerRightCol">
+                <ul id="footerNav">
+                    <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
+                    <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
+                    <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
+                    <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
+                    <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <!-- Option: Other JavaScript -->
-        <script src="assets/js/translate.js"></script>
-        <script src="assets/js/index.js"></script>
-    </body>
+    <!-- Option: Other JavaScript -->
+    <script src="assets/js/translate.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
 
 </html>
