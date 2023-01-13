@@ -1,134 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ZNG</title>
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="assets/css/frontend.base.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
-        <!-- JavaScript: Check selected/default language on page load -->
-        <script src="assets/js/init.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZNG</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
 
-    <body>
-        <div class="container bg-transparent">
-            <div class="choose-language-top">
-                <p lng-tag="json_choose_language"></p>
-                <div class="d-inline-block">
-                    <input type="radio" class="btn-check" name="options" id="enTranslator" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="enTranslator">English</label>
-                </div>
-                <div class="d-inline-block">
-                    <input type="radio" class="btn-check" name="options" id="spTranslator" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="spTranslator">Spanish</label>
-                </div>
+    <!-- START: Translate JavaScript -->    
+    <script src="assets/js/init.js"></script>
+    <!-- END: Translate JavaScript -->
+
+</head>
+
+<body>
+    <div class="container bg-transparent">
+        <div class="choose-language-top">
+            <p lng-tag="json_choose_language"></p>
+            <select name="languageChange" id="languageChange">
+                <option value="en">EN</option>
+                <option value="sp">SP</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div id="topHeader">
+            <div id="topLogo">
+                <a href="index.html">
+                    <span class="icoLogo">
+                        <img src="assets/images/icoLogo.png" alt="Logo" />
+                    </span>
+                    <span class="logoTitle">ZNG</span>
+                    <span class="logoSubtitle">Best value for advertisers and publishers</span>
+                </a>
+            </div>
+            <div id="topSubNav">
+                <a href="advertiser-login.html" class="advLogin" lng-tag="nav_advertiser_login"></a>
+                <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
+            </div>
+            <ul id="mainNav">
+                <li><a href="index.html" lng-tag="nav_home"></a></li>
+                <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
+                <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
+                <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
+            </ul>
+        </div>
+        <div id="promoBlock">
+            <div id="promoImage"><img class="defaultLogo" src="assets/images/logo_170x200.png"></div>
+            <div id="promoContent">
+                <h2 lng-tag="home_welcome"></h2>
+                <p lng-tag="home_welcome_intro"></p>
             </div>
         </div>
-        <div class="container">
-            <div id="topHeader">
-                <div id="topLogo">
-                    <a href="index.html">
-                        <span class="icoLogo">
-                            <img src="assets/images/icoLogo.png" alt="Logo" />
-                        </span>
-                        <span class="logoTitle">ZNG</span>
-                        <span class="logoSubtitle">Best value for advertisers and publishers</span>
-                    </a>
-                </div>
-                <div id="topSubNav">
-                    <a href="advertiser-login.html" class="advLogin" lng-tag="nav_advertiser_login"></a>
-                    <a href="publisher-login.html" class="pubLogin" lng-tag="nav_publisher_login"></a>
-                </div>
-                <ul id="mainNav">
-                    <li><a href="index.html" lng-tag="nav_home"></a></li>
-                    <li><a href="mailto:media@zng.com" lng-tag="nav_contact"></a></li>
-                    <li><a href="advertiser-signup.html" lng-tag="nav_advertiser"></a></li>
-                    <li><a href="publisher-signup.html" lng-tag="nav_publisher"></a></li>
+        <div id="mainContent" class="landing-container">
+            <div id="mainContentLeftCol">
+                <h3 lng-tag="home_welcome_advertisers"></h3>
+                <div class="colContainer">
+                    <p class="colHeader" lng-tag="home_advertiser_header"></p>
+                    <h4 lng-tag="home_advertiser_subhead"></h4>
+                    <ul>
+                        <li lng-tag="home_advertiser_li1"></li>
+                        <li>
+                            <span lng-tag="home_advertiser_li2"></span>
+                            <ul>
+                                <li lng-tag="home_advertiser_li2_1"></li>
+                                <li lng-tag="home_advertiser_li2_2"></li>
+                                <li lng-tag="home_advertiser_li2_3"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span lng-tag="home_advertiser_li3"></span>
+                            <ul>
+                                <li lng-tag="home_advertiser_li3_1"></li>
+                                <li lng-tag="home_advertiser_li3_2"></li>
+                            </ul>
+                        </li>
+                        <li lng-tag="home_advertiser_li4"></li>
+                        <li lng-tag="home_advertiser_li5"></li>
+                        <li lng-tag="home_advertiser_li6"></li>
+                    </ul>
+                    <p lng-tag="home_advertiser_foot"></p>
+                </div><a href="advertiser-signup.html" class="btn" lng-tag="create_advertiser_account"></a>
+            </div>
+            <div id="mainContentRightCol">
+                <h3 lng-tag="home_welcome_publishers"></h3>
+                <div class="colContainer">
+                    <p class="colHeader" lng-tag="home_publisher_header"></p>
+                    <h4 lng-tag="home_publisher_subhead"></h4>
+                    <ul>
+                        <li lng-tag="home_publisher_li1"></li>
+                        <li lng-tag="home_publisher_li2"></li>
+                        <li lng-tag="home_publisher_li3"></li>
+                        <li lng-tag="home_publisher_li4"></li>
+                        <li lng-tag="home_publisher_li5"></li>
+                        <li lng-tag="home_publisher_li6"></li>
+                        <li lng-tag="home_publisher_li7"></li>
+                        <li lng-tag="home_publisher_li8"></li>
+                        <li lng-tag="home_publisher_li9"></li>
+                        <li lng-tag="home_publisher_li10"></li>
+                        <li lng-tag="home_publisher_li11"></li>
+                    </ul>
+                    <p lng-tag="home_publisher_foot"></p>
+                </div><a href="publisher-signup.html" class="btn publisher" lng-tag="create_publisher_account"></a>
+            </div>
+        </div>
+    </div>
+    <div id="bottomFooter">
+        <div class="container noBg">
+            <div id="footerLeftCol">
+                <a href="#" class="adkernelPoweredLink" target="_blank" lng-tag="footer_powered_by"></a>
+            </div>
+            <div id="footerRightCol">
+                <ul id="footerNav">
+                    <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
+                    <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
+                    <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
+                    <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
+                    <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
                 </ul>
             </div>
-            <div id="promoBlock">
-                <div id="promoImage"><img class="defaultLogo" src="assets/images/logo_170x200.png"></div>
-                <div id="promoContent">
-                    <h2 lng-tag="home_welcome"></h2>
-                    <p lng-tag="home_welcome_intro"></p>
-                </div>
-            </div>
-            <div id="mainContent" class="landing-container">
-                <div id="mainContentLeftCol">
-                    <h3 lng-tag="home_welcome_advertisers"></h3>
-                    <div class="colContainer">
-                        <p class="colHeader" lng-tag="home_advertiser_header"></p>
-                        <h4 lng-tag="home_advertiser_subhead"></h4>
-                        <ul>
-                            <li lng-tag="home_advertiser_li1"></li>
-                            <li>
-                                <span lng-tag="home_advertiser_li2"></span>
-                                <ul>
-                                    <li lng-tag="home_advertiser_li2_1"></li>
-                                    <li lng-tag="home_advertiser_li2_2"></li>
-                                    <li lng-tag="home_advertiser_li2_3"></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span lng-tag="home_advertiser_li3"></span>
-                                <ul>
-                                    <li lng-tag="home_advertiser_li3_1"></li>
-                                    <li lng-tag="home_advertiser_li3_2"></li>
-                                </ul>
-                            </li>
-                            <li lng-tag="home_advertiser_li4"></li>
-                            <li lng-tag="home_advertiser_li5"></li>
-                            <li lng-tag="home_advertiser_li6"></li>
-                        </ul>
-                        <p lng-tag="home_advertiser_foot"></p>
-                    </div><a href="advertiser-signup.html" class="btn" lng-tag="create_advertiser_account"></a>
-                </div>
-                <div id="mainContentRightCol">
-                    <h3 lng-tag="home_welcome_publishers"></h3>
-                    <div class="colContainer">
-                        <p class="colHeader" lng-tag="home_publisher_header"></p>
-                        <h4 lng-tag="home_publisher_subhead"></h4>
-                        <ul>
-                            <li lng-tag="home_publisher_li1"></li>
-                            <li lng-tag="home_publisher_li2"></li>
-                            <li lng-tag="home_publisher_li3"></li>
-                            <li lng-tag="home_publisher_li4"></li>
-                            <li lng-tag="home_publisher_li5"></li>
-                            <li lng-tag="home_publisher_li6"></li>
-                            <li lng-tag="home_publisher_li7"></li>
-                            <li lng-tag="home_publisher_li8"></li>
-                            <li lng-tag="home_publisher_li9"></li>
-                            <li lng-tag="home_publisher_li10"></li>
-                            <li lng-tag="home_publisher_li11"></li>
-                        </ul>
-                        <p lng-tag="home_publisher_foot"></p>
-                    </div><a href="publisher-signup.html" class="btn publisher" lng-tag="create_publisher_account"></a>
-                </div>
-            </div>
         </div>
-        <div id="bottomFooter">
-            <div class="container noBg">
-                <div id="footerLeftCol">
-                    <a href="#" class="adkernelPoweredLink" target="_blank" lng-tag="footer_powered_by"></a>
-                </div>
-                <div id="footerRightCol">
-                    <ul id="footerNav">
-                        <li><a href="index.html" lng-tag="footer_nav_home"></a></li>
-                        <li><a href="mailto:media@zng.com" lng-tag="footer_nav_contact"></a></li>
-                        <li><a href="advertiser-signup.html" lng-tag="footer_nav_advertisers"></a></li>
-                        <li><a href="publisher-signup.html" lng-tag="footer_nav_publishers"></a></li>
-                        <li><a href="#" lng-tag="footer_nav_privacy"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <!-- Option: Other JavaScript -->
-        <script src="assets/js/translate.js"></script>
-        <script src="assets/js/index.js"></script>
-    </body>
+    <!-- Option: Other JavaScript -->
+    <script src="assets/js/translate.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
 
 </html>

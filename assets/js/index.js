@@ -3,12 +3,12 @@ function translate(lng, tagAttr) {
     translate.init(tagAttr, lng);
     translate.process();
 }
-function changeTranslate(id, lang) {
-    document.getElementById(id).addEventListener("click", () => {
-        translate(lang, "lng-tag");
-        localStorage.setItem("lang", lang);
-    });
-}
-changeTranslate("enTranslator", "en");
-changeTranslate("spTranslator", "sp");
 
+
+document.getElementById("languageChange").addEventListener("change", (e) => {
+    console.log(e.target.value);
+    const lang = e.target.value;
+    document.getElementById("languageChange").value =  lang;
+    translate(lang, "lng-tag");
+    localStorage.setItem("lang", lang);
+});
