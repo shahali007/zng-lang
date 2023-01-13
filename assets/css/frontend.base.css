@@ -202,7 +202,7 @@ a:hover {
     margin: 23px 0 0 25px;
     font-size: 2em;
     font-weight: bold;
-    width: 560px;
+    width: 330px;
 }
 
 #topLogo a {
@@ -249,11 +249,10 @@ a:hover {
     -moz-border-radius: 3px;
     border-radius: 3px;
     height: 30px;
-    width: 100px;
     line-height: 30px;
     font-size: 1.1em;
     padding-left: 28px;
-    padding-right: 5px;
+    padding-right: 28px;
     margin-left: 20px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
