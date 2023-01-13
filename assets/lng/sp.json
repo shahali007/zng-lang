@@ -22,7 +22,7 @@
     "home_advertiser_li3_2": "Optimización del ROI de los objetivos de CPA",
     "home_advertiser_li4": "Seguimiento e informes en tiempo real",
     "home_advertiser_li5": "Atención al cliente personalizada",
-    "home_advertiser_li6": "API Access",
+    "home_advertiser_li6": "Acceso API",
     "home_advertiser_foot": "We cooperate with individual advertisers and Networks!",
     "create_advertiser_account": "Crear una cuenta de anunciante",
 
@@ -35,7 +35,7 @@
     "home_publisher_li4": "Anuncios relevantes",
     "home_publisher_li5": "Algoritmos de coincidencia inteligentes",
     "home_publisher_li6": "Fuentes XML",
-    "home_publisher_li7": "No Setup Fees",
+    "home_publisher_li7": "Sin tarifas de instalación",
     "home_publisher_li8": "Inicio rápido",
     "home_publisher_li9": "Facilidad de uso",
     "home_publisher_li10": "Informes robustos y seguimiento en tiempo real",
@@ -71,5 +71,5 @@
     "website": "Sitio web",
     "website_description": "Descripcion del Sitio Web",
 
-    "json_choose_language": "Cambiar el idioma del sitio web"
+    "json_choose_language": "Seleccione el idioma"
 }
